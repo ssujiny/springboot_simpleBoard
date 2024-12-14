@@ -1,37 +1,16 @@
 package com.study.sBoard.dto
 ;
 import lombok.Data;
-
+/*	lombok의 어노테이션
+ *	@Data
+ * 	-> @Getter, @Setter, @RequiredArgsConstructor(생성자), @ToString, @EqualsAndHashCode을 한꺼번에 설정
+ * 		: 해당 메소드가 자동생성 된다.
+ */
 @Data
 public class SimpleBoardDto {
 	private int id;
 	private String writer;
 	private String title;
 	private String content;
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getWriter() {
-		return writer;
-	}
-	public void setWriter(String writer) {
-		this.writer = writer;
-	}
-	public String getTitle() {
-		return title;
-	}
-	public void setTitle(String title) {
-		this.title = title;
-	}
-	public String getContent() {
-		return content;
-	}
-	public void setContent(String content) {
-		this.content = content;
-	}
-	
 	
 }
